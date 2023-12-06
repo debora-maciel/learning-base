@@ -18,14 +18,16 @@ export const counterSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    incrementByAmount: (state, action: PayloadAction<UserState>) => {
-      state = action.payload
-    },
+    signIn: (state, action: PayloadAction<UserState>) => {
+      state.isLoggedIn = action.payload.isLoggedIn;
+      state.login= action.payload.login;
+      state.session = action.payload.session;
+    }
   },
 })
 
-export const {  incrementByAmount } = counterSlice.actions
+export const {  signIn } = counterSlice.actions
 
-export const selectCount = (state: RootState) => state.users
+export const selectUser = (state: RootState) => state.user
 
 export default counterSlice.reducer

@@ -3,11 +3,11 @@ import Template from "./Template";
 import { store } from "./auth/store";
 
 function App() {
-
-
   return (
     <Provider store={store}>
-      <Template>{/* ROUTES */}</Template>
+      <Template>{/* ROUTES */}
+        <></>
+      </Template>
     </Provider>
   );
 }
