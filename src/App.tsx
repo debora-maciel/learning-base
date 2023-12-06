@@ -6,7 +6,7 @@ function App() {
   return (
     <Provider store={store}>
       <Template>{/* ROUTES */}
-        <></>
+        <>Logged</>
       </Template>
     </Provider>
   );
