@@ -47,7 +47,7 @@ export default function Login() {
         </div>
         <div className="w-full flex items-center justify-center">
           <Button onClick={onLogin} fullWidth variant="contained">
-            SignIn
+            login
           </Button>
         </div>
       </div>
